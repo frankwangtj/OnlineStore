@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.673 sec <<< FAILURE!
+beforeMethod(test.java.TestFramework001)  Time elapsed: 0.114 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/w3c/dom/ElementTraversal
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.apache.xerces.parsers.AbstractDOMParser.startDocument(Unknown Source)
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.startDocument(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentScannerImpl.startEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.startDocumentParsing(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at javax.xml.parsers.DocumentBuilder.parse(Unknown Source)
+	at org.apache.log4j.xml.DOMConfigurator$1.parse(DOMConfigurator.java:749)
+	at org.apache.log4j.xml.DOMConfigurator.doConfigure(DOMConfigurator.java:871)
+	at org.apache.log4j.xml.DOMConfigurator.doConfigure(DOMConfigurator.java:755)
+	at org.apache.log4j.xml.DOMConfigurator.configure(DOMConfigurator.java:896)
+	at test.java.TestFramework001.beforeMethod(TestFramework001.java:39)
+Caused by: java.lang.ClassNotFoundException: org.w3c.dom.ElementTraversal
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 64 more
+
